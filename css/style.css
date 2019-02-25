@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+
+body{
+  margin: 0;
+  background: #eae5e5;
+  font-family: 'Work sans', sans-serif;
+  font-weight: 400;
+  min-width: 1700px;
+}
+
+/*header stylesheet*/
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+header{
+  background: #8b8b8b;
+  color: #444;
+}
+
+header::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+header .me_info {
+  float: left;
+  padding-top: 15px;;
+}
+
+header .name{
+  color: #282828;
+  font-weight: 700;
+  font-size: 45px;
+}
+
+header .job {
+  font-size: 25px;
+  display: block;
+  padding-top: 10px;
+  margin-bottom: 15px;
+}
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li{
+  display: inline-block;
+  margin-left: 25px;
+  padding-top: 50px;
+  position: relative;
+}
+
+nav a {
+  color: #44444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  color: #eae5e5;
+}
+
+nav a:hover{
+  color: #282828;
+}
+
+nav a::before{
+  content: '';
+  display: block;
+  height: 5px;
+  width: 100;
+  background-color: #282828;
+  position: absolute;
+  top:  40px;
+  width: 0%;
+  transition: all ease-in-out 300ms;
+}
+
+nav a:hover::before{
+  width: 100%;
+}
+
+/*footer stylesheet*/
+footer{
+  clear: both;
+  position: relative;
+  bottom: -85px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #eae5e5;
+  width: 100%;
+  background: #8b8b8b;
+}
+
+footer ul{
+  list-style: none;
+  text-align: center;
+}
+
+footer ul li {
+  font-size: 15px;
+  display: inline-block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 0 5% 0 5%;
+}
+footer li div {
+  display: inline-block;
+}
+
+footer li div img{
+  margin: 5%;
+}
+
+#footer_samp{
+display: inline-block;
+height: 20px;
+font-family: 'Work sans', sans-serif;
+font-size: 16px;
+text-align: justify;
+}
+
+.follow_icon{
+  display: block;
+  position: absolute;
+  bottom: 14px;
+}
+
+.follow_icon a{
+  display: inline-block;
+}
+
+#footer_follow{
+  position: absolute;
+  top: 25px;
+}
+
+.footer_blok{
+  display: block;
+  margin-top: -10px;
+}
+
+.follow_icon img{
+  margin-left: 5px;
+  width: 23px;
+}
+
+.circle {
+  width: 50px;
+    height: 50px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background: #202020;
+}
+.footer_icon{
+  height: 30px;
+   transform: translate(0px, 7px);
+}
+
+/* o mnie */
+section{
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  color: #282828;
+}
+
+.focus_first{
+  display: inline-block;
+  margin-top: 50px;
+}
+
+.avatar{
+  border-style: solid;
+  border-color: #595757;
+  float: left;
+  margin-right: 50px;
+  width: 300px;
+  border-radius: 50%;
+  -webkit-filter: grayscale(15%);
+  filter: grayscale(50%);
+}
+
+h1{
+  font-size: 40px
+}
+
+p{
+  font-size: 20px;
+}
+
+.about_me {
+  margin-top: 0px;
+  padding: 61px 0;
+
+}
+
+.about_me #bold{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.focus{
+  display: block;
+  margin: 2px 20px;
+  width: 400px;
+  min-height: 200px;
+  background-color: #8b8b8b;
+  float: left;
+}
+
+.focus samp{
+  display: block;
+  margin:0 5px;
+}
+
+#fires_head {
+  margin: 7px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #444;
+  color: #eae5e5;
+  padding: 3px;
+}
+
+#secend_head{
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 12px;
+}
+
+#desc{
+  margin-top: 5px;
+  margin-left: 12px;
+  font-size: 16px;
+}
+
+
+/* contact */
+.contact{
+  display: block;
+  margin-top: 80px;
+}
+
+#contact_head{
+  font-size: 50px;
+  font-weight: 700;
+  background-color: #8b8b8b;
+  padding: 2px;
+}
+
+#contack_hed_text{
+  margin: 10px 5px;
+  padding-left: 25px;
+  background-color: #444;
+  color: #eae5e5;
+}
+
+.contack_info{
+  float: left;
+  display: inline-block;
+  margin-top: 87px;
+}
+
+.contact_image{
+  /* margin-top: 100px; */
+  padding:  25px 0 0 0;
+}
+
+.contact_image img{
+  background-color: #8b8b8b;
+  padding: 15px;
+  width: 50px;
+}
+
+.contact_table{
+  font-size: 19px;
+  text-align: left;
+  margin-top: 10px
+}
+.contact_table a{
+  color: inherit;
+  text-decoration:none;
+  cursor:pointer;
+}
+
+.contact_form{
+  padding-left: 150px;
+  font-size: 18px;
+}
+
+.contact_form input{
+  width:500px;
+  font-size: 18px
+}
+
+.contact_form #text{
+  display: block;
+  font-size: 18px;
+  width: 513px;
+}
+
+.contact_form #button{
+  width: 150px;
+}
