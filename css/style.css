@@ -211,8 +211,7 @@ p{
 .focus{
   display: block;
   margin: 2px 20px;
-  min-width: 250px;
-  max-width: 400px;
+  width: 29%;
   min-height: 200px;
   background-color: #8b8b8b;
   float: left;
