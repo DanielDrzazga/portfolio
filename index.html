@@ -4,30 +4,26 @@
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="./css/style.css">
   <title>Portfolio Daniel Drzazga</title>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+<script>
+$(function(){
+  $("#header").load("header.html");
+  $("#footer").load("footer.html");
+});
+</script>
 </head>
 
 <body>
+	<div id="header"></div>
+  <div id="page-container">
+    <div id="content-wrap">
 
-  <header>
-    <div class="container">
-      <div class="me_info">
-        <a class="name">Daniel Drzazga</a>
-        <a class="job">Junior Software Developer</a>
-      </div>
-
-      <nav>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./contact.html">Kontakt</a></li>
-        </ul>
-      </nav>
-
-    </div>
-  </header>
-
-  <section>
-      <div class="focus_first">
-        <div class="section_home">
+        <div class="focus_first">
+          <div class="section_home">
           <img class="avatar" src="img/avatar1.jpg" alt="avatar">
         </div>
         <div class="section_home">
@@ -43,89 +39,42 @@
             </p>
           </div>
         </div>
-      </div>
 
-      <div class="focus_second">
-        <div class="focus">
-          <div id="fires_head">
-            <samp>CodersLab
-              <div style="display:inline; float:right">
-                <img src="img/approved.png" alt="approved" width="20">
-              </div>
-            </samp>
 
-          </div>
-          <samp id="secend_head">Java Developer: Web</samp>
-          <samp id="desc">Ukończenie kursu CodersLab i kontynuacja nauki poprzez samokształcenie oraz doskonalenie nabytych umiejętności i wiedzy podczas kursu.
-          </samp>
-        </div>
-
-        <div class="focus">
-          <div id="fires_head">
-            <samp>Projecty</samp>
-          </div>
-          <samp id="secend_head">CRUD REST API Service</samp>
-          <samp id="desc">Stworzenie aplikacji koncentrujacej się na CRUD i API.</samp>
-        </div>
-
-        <div class="focus">
+        <div class="focus_first">
+          <div class="focus">
             <div id="fires_head">
-              <samp>FreeCodeCamp</samp>
+              <samp>CodersLab
+                <div style="display:inline; float:right">
+                  <img src="img/approved.png" alt="approved" width="20">
+                </div>
+              </samp>
             </div>
-            <samp id="secend_head">Responsive Web Design Certification</samp>
-            <samp id="desc">Rozpoczęcie internetowego kursy FreeCodeCamp oraz stworzenie projektu końcowego.</samp>
-        </div>
-
-      </div>
-
-  </section>
-
-  <footer>
-    <div class="contener">
-    <ul>
-      <li>
-        <div class="circle"><img class="footer_icon" src="img/phone.png" alt="phone"></div>
-        <div id="footer_samp">
-          <samp>
-            <b>Call</b></br>
-            T: 508-599-694
-          </samp>
-        </div>
-      </li>
-      <li>
-        <div class="circle"><img class="footer_icon" src="img/mail.png" alt="gmail"></div>
-        <div clas="footer_samp">
-          <samp id="footer_samp">
-            Contact<br>
-            drzazga.daniel@gmail.com
-          </samp>
-      </div>
-      </li>
-      <li>
-        <div class="circle"><img class="footer_icon" src="img/plus.png" alt="plus"></div>
-          <div clas="footer_samp">
-            <div class="footer_blok">
-              <samp id="footer_samp">Follow me<br><br></samp>
-            </div>
-            <div class="footer_blok">
-              <div class="follow_icon">
-                <a target="_blank" href="https://github.com/DanielDrzazga"><img src="img/github.png" alt="github"></a>
-                <a target="_blank" href="https://linkedin.com/in/daniel-drzazga"><img src="img/linkedin.png" alt="linkedin"></a>
-              </div>
-            </div>
+            <samp id="secend_head">Java Developer: Web</samp>
+            <samp id="desc">Ukończenie kursu CodersLab i kontynuacja nauki poprzez samokształcenie oraz doskonalenie nabytych umiejętności i wiedzy podczas kursu.
+            </samp>
           </div>
 
+          <div class="focus">
+            <div id="fires_head">
+              <samp>Projecty</samp>
+            </div>
+            <samp id="secend_head">CRUD REST API Service</samp>
+            <samp id="desc">Stworzenie aplikacji koncentrujacej się na CRUD i API.</samp>
+          </div>
 
-      </li>
-      <li>
-        <div class="circle"><img class="footer_icon" src="img/copyright.png" alt="copyright"></div>
-        <samp id="footer_samp">@2019 by <br> Daniel Drzazga</samp>
-      </li>
+          <div class="focus">
+              <div id="fires_head">
+                <samp>FreeCodeCamp</samp>
+              </div>
+              <samp id="secend_head">Responsive Web Design Certification</samp>
+              <samp id="desc">Rozpoczęcie internetowego kursy FreeCodeCamp oraz stworzenie projektu końcowego.</samp>
+          </div>
 
-    </ul>
+        </div>
+</div>
+</div>
 
-    </div>
-  </footer>
-
+<div id="footer"></div>
 </body>
 </html>

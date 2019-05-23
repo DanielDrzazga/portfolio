@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <!-- <link rel="stylesheet" type="text/css" href="./css/style.css"> -->
+  <title>Portfolio Daniel Drzazga</title>
+	<script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+<script>
+$(function(){
+  $("#header").load("header.html");
+  $("#footer").load("footer.html");
+});
+</script>
+</header>
+<body>
+	<div id="header"></div>
+
+  <div id="page-container">
+    <div id="content-wrap">
+
+      <div class="contact">
+
+        <div id="contact_head">
+          <div id="contack_hed_text">
+            Projekty
+          </div>
+        </div>
+
+      <div class="project_first">
+        <div class="project">
+          <div id="fires_head">
+            <samp>Nip Finder
+            </samp>
+          </div>
+          <samp id="secend_head">Aplikacja wyświetlająca dane firmy</samp>
+          <samp id="proj_desc">
+            Aplikacja wyświetlająca dane firmy Jest to aplikacja która łączy się z zewnętrznym API GUS regon i na podstawie numeru NIP
+            wyświetla podstawowe informacje o firmie. Aplikacja łączy się ze środowiskiem testowym ("Baza na środowisku testowym to
+            pełna baza danych, stan z 8.listopada 2014r. Adresy miejsc prowadzenia działalności podmiotów na środowisku testowym są zanonimizowane.").
+            Aby uzyskać dostęp do aktualnej bazy należy zarejestrować się na oficjalnej stronie API i wprowadzić otrzymany klucz użytkownika oraz
+            adres usługi do aplikacji.
+            <br>
+            <a target="_blank" href="https://github.com/DanielDrzazga/nip_finder">https://github.com/DanielDrzazga/nip_finder</a>
+            <br>
+            <a target="_blank" href="https://nipfinder.herokuapp.com/">https://nipfinder.herokuapp.com</a>
+          </samp>
+        </div>
+
+      </div>
+
+      </div>
+    </div>
+  </div>
+
+	<div id="footer"></div>
+</body>
+</html>

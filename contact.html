@@ -4,28 +4,24 @@
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="./css/style.css">
   <title>Portfolio Daniel Drzazga</title>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+<script>
+$(function(){
+  $("#header").load("header.html");
+  $("#footer").load("footer.html");
+});
+</script>
 </head>
 
 <body>
+	<div id="header"></div>
+  <div id="page-container">
+    <div id="content-wrap">
 
-  <header>
-    <div class="container">
-      <div class="me_info">
-        <a class="name">Daniel Drzazga</a>
-        <a class="job">Junior Software Developer</a>
-      </div>
-
-      <nav>
-        <ul>
-					<li><a href="./index.html">Home</a></li>
-          <li><a href="./contact.html">Kontakt</a></li>
-        </ul>
-      </nav>
-
-    </div>
-  </header>
-
-  <section>
 
     <div class="contact">
 
@@ -33,94 +29,48 @@
         <div id="contack_hed_text">
           Kontakt
         </div>
-
 			</div>
 
-
-      <div class="contack_info">
-        <div class="contact_image">
-            <a target="_blank" href="https://github.com/DanielDrzazga"><img src="img/github.png" alt="github"></a>
-            <a target="_blank" href="https://linkedin.com/in/daniel-drzazga"><img src="img/linkedin.png" alt="linkedin"></a>
-        </div>
-  			<div>
-  				<table class="contact_table">
-  					<tr>
-  						<th>Telefon:<th>
-              <td>508-599-694</td>
-  					</tr>
-            <tr>
-              <th>E-mail:<th>
-              <td><a href="mailto:drzazga.daniel@gmail.com">drzazga.daniel@gmail.com</a></td
-            </tr>
-  				</table>
-			  </div>
-      </div>
-
-    <div class="contack_info">
-      <form class="contact_form" action="mailto:drzazga.daniel@gmail.com" method="post" enctype="text/plain" id="fomr">
-        Pełna nazwa:<br>
-        <input id="name" type="text" name="name" placeholder="Pełna nazwa"><br>
-        E-mail:<br>
-        <input id="mail" type="text" name="mail" placeholder="Email"><br>
-        Treść:<br>
-        <textarea id="text" type="text" name="comment" rows="8" placeholder="Treść wiadomości do wysłania"></textarea>
-        <br>
-        <input id="button" type="submit" value="Wyślij">
-        <input id="button" type="reset" value="Wyczyść">
-      </form>
-		</div>
-
-  </div>
-
-
-  </section>
-
-  <footer>
-    <div class="contener">
-    <ul>
-      <li>
-        <div class="circle"><img class="footer_icon" src="img/phone.png" alt="phone"></div>
-        <div id="footer_samp">
-          <samp>
-            <b>Call</b></br>
-            T: 508-599-694
-          </samp>
-        </div>
-      </li>
-      <li>
-        <div class="circle"><img class="footer_icon" src="img/mail.png" alt="gmail"></div>
-        <div clas="footer_samp">
-          <samp id="footer_samp">
-            Contact<br>
-            drzazga.daniel@gmail.com
-          </samp>
-      </div>
-      </li>
-      <li>
-        <div class="circle"><img class="footer_icon" src="img/plus.png" alt="plus"></div>
-          <div clas="footer_samp">
-            <div class="footer_blok">
-              <samp id="footer_samp">Follow me<br><br></samp>
-            </div>
-            <div class="footer_blok">
-              <div class="follow_icon">
-                <a target="_blank" href="https://github.com/DanielDrzazga"><img src="img/github.png" alt="github"></a>
-                <a target="_blank" href="https://linkedin.com/in/daniel-drzazga"><img src="img/linkedin.png" alt="linkedin"></a>
-              </div>
-            </div>
+      <div>
+        <div class="contack_info">
+          <div class="contact_image">
+              <a target="_blank" href="https://github.com/DanielDrzazga"><img src="img/github.png" alt="github"></a>
+              <a target="_blank" href="https://linkedin.com/in/daniel-drzazga"><img src="img/linkedin.png" alt="linkedin"></a>
           </div>
+    			<div>
+    				<table class="contact_table">
+    					<tr>
+    						<th>Telefon:<th>
+                <td>508-599-694</td>
+    					</tr>
+              <tr>
+                <th>E-mail:<th>
+                <td><a href="mailto:drzazga.daniel@gmail.com">drzazga.daniel@gmail.com</a></td
+              </tr>
+    				</table>
+  			  </div>
+        </div>
 
+        <div class="contack_info">
+          <form class="contact_form" action="mailto:drzazga.daniel@gmail.com" method="post" enctype="text/plain" id="fomr">
+            Pełna nazwa:<br>
+            <input id="name" type="text" name="name" placeholder="Pełna nazwa"><br>
+            E-mail:<br>
+            <input id="mail" type="text" name="mail" placeholder="Email"><br>
+            Treść:<br>
+            <textarea id="text" type="text" name="comment" rows="8" placeholder="Treść wiadomości do wysłania"></textarea>
+            <br>
+            <input id="button" type="submit" value="Wyślij">
+            <input id="button" type="reset" value="Wyczyść">
+          </form>
+    		</div>
 
-      </li>
-      <li>
-        <div class="circle"><img class="footer_icon" src="img/copyright.png" alt="copyright"></div>
-        <samp id="footer_samp">@2019 by <br> Daniel Drzazga</samp>
-      </li>
-
-    </ul>
+      </div>
 
     </div>
-  </footer>
+  </div>
+</div>
 
+<div id="footer"></div>
 </body>
 </html>
